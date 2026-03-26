@@ -10,7 +10,7 @@ app = FastAPI(title="Bean Haven AI Assistant")
 
 llm = ChatOpenAI(
     model="deepseek-chat",
-    openai_api_key=os.getenv("DEEPSEEK_API_KEY"),   # 直接写死Key
+    openai_api_key=os.getenv("DEEPSEEK_API_KEY"),
     base_url="https://api.deepseek.com",
     temperature=0.7
 )
